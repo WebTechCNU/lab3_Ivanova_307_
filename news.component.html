@@ -1,0 +1,12 @@
+<!-- src/app/news/news.component.html -->
+
+<div class="news">
+  <h2>Latest News</h2>
+  <div *ngFor="let newsItem of newsItems">
+    <div class="news-item">
+      <h3>{{ newsItem.title }}</h3>
+      <p>{{ newsItem.content }}</p>
+      <small>{{ newsItem.date }}</small>
+    </div>
+  </div>
+</div>
